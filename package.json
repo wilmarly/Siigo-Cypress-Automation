@@ -1,0 +1,23 @@
+{
+  "name": "siigo-cypress-automation",
+  "version": "1.0.0",
+  "description": "Automatización para creación de Terceros tipo cliente con Cypress en Siigo.",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilmarly/Siigo-Cypress-Automation.git"
+  },
+  "keywords": [],
+  "author": "Wilmar Sánchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wilmarly/Siigo-Cypress-Automation/issues"
+  },
+  "homepage": "https://github.com/wilmarly/Siigo-Cypress-Automation#readme",
+  "devDependencies": {
+    "cypress": "^14.3.0"
+  }
+}
