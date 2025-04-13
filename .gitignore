@@ -1,3 +1,21 @@
 # Node modules
 node_modules/
 
+# VSC Config files
+.vscode
+
+# Cypress cache, screenshots, and videos
+cypress/cache/
+cypress/videos/
+cypress/screenshots/
+
+# Log files
+npm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log

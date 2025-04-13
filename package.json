@@ -4,7 +4,9 @@
   "description": "Automatización para creación de Terceros tipo cliente con Cypress en Siigo.",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "golden-path:open": "cypress open tags=@golden-path",
+    "e2e:run": "cypress run tags=@e2e --browser electron"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,13 @@
   },
   "homepage": "https://github.com/wilmarly/Siigo-Cypress-Automation#readme",
   "devDependencies": {
-    "cypress": "^14.3.0"
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "cypress": "^14.3.0",
+    "depcheck": "^1.4.7",
+    "esbuild": "^0.25.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
   }
 }
