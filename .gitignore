@@ -8,6 +8,10 @@ node_modules/
 cypress/cache/
 cypress/videos/
 cypress/screenshots/
+cypress/downloads/
+cypress/reports/
+cypress/results/
+cypress/logs/
 
 # Log files
 npm-debug.log*
@@ -19,3 +23,22 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*

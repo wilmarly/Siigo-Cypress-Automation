@@ -36,7 +36,7 @@ async function setupNodeEvents(on, config) {
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
-    includeShadowDom: true, // Agregamos esta opción para incluir el Shadow DOM
+    includeShadowDom: true, // permite acceder al Shadow DOM
     specPattern: 'cypress/e2e/features/**/*.feature',
     chromeWebSecurity: false,
     video: true,

@@ -93,9 +93,9 @@ class AuthenticationPage {
      * 3. Hacer clic en submit
      */
     performLogin(username, password) {
-      this.enterUsername(username); // paso 1
-      this.enterPassword(password); // paso 2
-      this.clickSubmit();           // paso 3
+      this.enterUsername(username); 
+      this.enterPassword(password); 
+      this.clickSubmit();           
     }
   }
   

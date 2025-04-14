@@ -5,8 +5,6 @@ import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import { authenticationPage } from "../../pages/common/AuthenticationPage";
 
 
-
-
 Given('que visualizo la página de login', function () {
   cy.visit(`${Cypress.env("STAGING_URL_SIIGO")}#/login`);
 });

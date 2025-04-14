@@ -6,6 +6,7 @@
   "scripts": {
     "cypress:open": "cypress open",
     "golden-path:open": "cypress open tags=@golden-path",
+    "sunnyday-path:open": "cypress open tags=@golden-path",
     "e2e:run": "cypress run tags=@e2e --browser electron"
   },
   "repository": {
@@ -24,7 +25,8 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
     "cypress": "^14.3.0",
     "depcheck": "^1.4.7",
-    "esbuild": "^0.25.2"
+    "esbuild": "^0.25.2",
+    "@faker-js/faker": "^9.6.0"
   },
   "dependencies": {
     "dotenv": "^16.4.7"
