@@ -42,3 +42,6 @@ Thumbs.db
 
 # Logs
 npm-debug.log*
+
+# Carpeta de reporte
+report/

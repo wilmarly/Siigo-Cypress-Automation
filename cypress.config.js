@@ -49,5 +49,12 @@ module.exports = defineConfig({
       QA_USER: process.env.QA_USER,
       QA_PASSWORD: process.env.QA_PASSWORD,
     },
+    reporter: 'mochawesome',
+    reporterOptions: {
+      reportDir: 'cypress/report/mochawesome',
+      overwrite: false,
+      html: true,
+      json: true
+    }
   },
 });

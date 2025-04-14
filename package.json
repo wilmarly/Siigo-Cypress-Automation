@@ -7,7 +7,12 @@
     "cypress:open": "cypress open",
     "golden-path:open": "cypress open tags=@golden-path",
     "sunnyday-path:open": "cypress open tags=@golden-path",
-    "e2e:run": "cypress run tags=@e2e --browser electron"
+    "e2e:run": "cypress run tags=@e2e --browser electron",
+     "clean:reports": "rimraf cypress/report/mochawesome",
+     "cypress:run": "npm run clean:reports && cypress run",
+     "report:merge": "mochawesome-merge cypress/report/mochawesome/*.json > cypress/report/mochawesome/merged.json",
+     "report:generate": "marge cypress/report/mochawesome/merged.json --reportDir cypress/report/mochawesome --reportFilename mochawesome",
+     "test:report": "npm run cypress:run && npm run report:merge && npm run report:generate"
   },
   "repository": {
     "type": "git",
@@ -23,10 +28,14 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "@faker-js/faker": "^9.6.0",
     "cypress": "^14.3.0",
     "depcheck": "^1.4.7",
     "esbuild": "^0.25.2",
-    "@faker-js/faker": "^9.6.0"
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "rimraf": "^6.0.1"
   },
   "dependencies": {
     "dotenv": "^16.4.7"
